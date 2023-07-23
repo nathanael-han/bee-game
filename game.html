@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="game_2.js"> </script> 
+   </head>
+   <body>
+      <div class="button_section">
+         <button type="button" class="btn btn-outline-secondary" id="pause"> Pause </button>
+         <button type="button" class="btn btn-outline-success" id="start"> Start </button>
+         <button type="button" class="btn btn-dark" id="instruct"> How to Play </button>
+         <button type="button" class="btn btn-info" id = "twelve">Assignment 12</button>
+      </div>
+      <div id = "text_instruct">
+         <p>Press Start and try to click the bee – reach 10 points to win! </p>
+      </div>
+      <h3 id="thisText"> </h3>
+      <div id="description">
+         <h5>Nathanael Han</h5>
+         <h6>DGMD E-20</h6>
+         <p>For this assignment, I added a few new features to the game. 
+            I modified the thisx and thisy variables to depend on the window’s width and height. This way when the bee changes position, it remains within the screen. 
+            I also created a variable pause_boolean to keep track of when the game is paused. In the showScore() function, I reference this value so the points only increment
+            when the bee is moving. I also disabled the pause and start buttons after they are clicked.  I then created toggle buttons to display this section and the instructions.
+            Lastly, I used an IF statement in the showScore() function to change the background image and to play a sound when 10 points are reached. 
+            <br>
+            <br>
+            Some other modifications I made were adding bootstrap buttons, and adding a transition for the bee image. I also created the two background gifs using Canva. 
+         </p>
+      </div>
+      <img src="images/bee.gif" id="myImage" width="" height="150"/>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   </body>
+</html>

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins&display=swap');
+body {
+	background-image: url('images/sun.gif');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#thisText {
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 50px;
+	margin-top: 50px;
+	color: rgb(17, 66, 24);
+}
+
+#text_instruct {
+	background-color: #06371887;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	color: white;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	display: none;
+}
+
+.button_section {
+	background-color: #f2f2f2;
+	padding: 20px;
+	text-align: center;
+	opacity: 90%;
+}
+
+
+/* source: https://stackoverflow.com/questions/12906789/preventing-an-image-from-being-draggable-or-selectable-without-using-js */
+
+img {
+	user-drag: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	cursor: pointer;
+}
+
+#twelve {
+    text-align: center;
+    margin-left: 20px;
+    position:absolute;
+    right: 10px;
+    top: 23px;
+    width: 110px;
+    font-size: 12px;
+}
+
+#description{
+    display: none;
+    position: absolute;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: auto;
+    background-color: #7c7c7c3e;
+    width: 500px;
+    padding: 30px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+#description p, h5, h6{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+@media only screen and (max-width:1100px) {
+	body {
+		background-size: 200%;
+	}
+}
